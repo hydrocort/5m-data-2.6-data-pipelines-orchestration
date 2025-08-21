@@ -5,3 +5,10 @@ output/*.db*
 *.pyc
 __pycache__/
 .env
+# Google Cloud credentials
+*.json
+service-account*.json
+*credentials*.json
+# Meltano sensitive files
+.meltano/run/
+.meltano/logs/

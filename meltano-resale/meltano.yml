@@ -17,14 +17,14 @@ plugins:
       host: aws-0-us-east-2.pooler.supabase.com
       port: 5432
       user: postgres.ufkutyufdohbogiqgjel
+      password: $TAP_POSTGRES_PASSWORD
   loaders:
   - name: target-bigquery
     variant: z3z1ma
     pip_url: git+https://github.com/z3z1ma/target-bigquery.git
     config:
       batch_size: 104857600
-      credentials_path: 
-        /home/chrisfkh/sctp-ds-ai/mod2/5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/sctp-dsai-468313-f5bc3e6b4ebe-innergritx.json
+      credentials_path: /home/chrisfkh/.config/gcloud/sctp-dsai-468313-f5bc3e6b4ebe-innergritx.json
       dataset: resale
       denormalized: true
       flattening_enabled: true
