@@ -94,6 +94,7 @@ By default, Meltano will instruct extractors to extract all supported entities a
 
 ```bash
 meltano select tap-github --list --all
+# meltano select tap-github --list --exclude
 ```
 
 If you recall from unit 2.4, we are interested in the `releases` entity, with the following attributes:
